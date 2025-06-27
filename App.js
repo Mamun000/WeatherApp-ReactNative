@@ -38,12 +38,12 @@ export default function App() {
     slideAnim.setValue(50);
     try {
       const weatherResponse = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=991ca7767ca41950b8025cbbbe5eb9fb&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=(use your api key)&units=metric`
       );
       const weatherData = await weatherResponse.json();
 
       const forecastResponse = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=991ca7767ca41950b8025cbbbe5eb9fb&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=(use your api key)&units=metric`
       );
       const forecastData = await forecastResponse.json();
 
